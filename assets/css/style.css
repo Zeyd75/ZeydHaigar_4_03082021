@@ -762,10 +762,6 @@ h4 {
     text-decoration: underline!important;
 }
 
-.bgc-white {
-    background-color: #FFFFFF;
-}
-
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
@@ -775,7 +771,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
@@ -810,11 +806,7 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("../img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("../assets/img/lines-h2-bg.png");
+    background-color: #eda46d;
 }
 
 .bg-banniere {
