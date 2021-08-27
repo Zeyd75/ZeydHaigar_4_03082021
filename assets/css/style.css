@@ -53,7 +53,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 20px 50px 0;
 }
 
 .bg-center,
@@ -88,11 +88,6 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -437,7 +432,6 @@ nav .caret {
 
 .mg-md {
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 .mg-lg {
@@ -701,7 +695,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
@@ -737,15 +731,11 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    padding-bottom: 25px;
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin: 0 auto 24px;
 }
 
 .avatar {
