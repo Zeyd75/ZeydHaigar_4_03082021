@@ -98,13 +98,18 @@
 								<label>
 									Adresse email
 								</label>
-								<input id="email" class="form-control" type="email" required />
+								<input id="email" name="email" class="form-control" type="email" required aria-invalid="false" />
+								<!--<div class="help-bloc">
+									<ul class="list-unstyled alert alert-warning" role="alert">
+										<li>Not a valid email address  data-validator-validemail-message to override </li>
+									</ul>
+								</div>-->
 							</div>
 							<div class="form-group">
 								<label>
 									Comment nous avez-vous connu ?
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<input class="form-control" type="text" required id="input_504" />
 							</div>
 							<div class="form-group">
 								<label>
