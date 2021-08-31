@@ -147,6 +147,10 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
+.d-bloc a:focus .icon-md {
+    border: solid black 2px;
+}
+
 .d-bloc a .icon-md {
     color: #FFC56D;
 }
@@ -282,7 +286,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .navbar {
@@ -303,6 +307,10 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+}
+
+.navbar-brand:focus img {
+    border: solid black 2px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -329,11 +337,6 @@ a:hover {
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
-
-/*.nav > li a:hover,
-.nav > li a:focus {
-    background: transparent;
-}*/
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
@@ -450,10 +453,7 @@ nav .caret {
     margin: 0 0 5px 5px;
 }
 
-.btn-d,
-.btn-d:hover,
-.btn-d:focus {
-    color: #FFF;
+.btn-d {
     background: rgba(0, 0, 0, .3);
 }
 
@@ -510,10 +510,6 @@ button {
 .scrollToTop {
     width: 40px;
     height: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 500;
     transition: all .3s ease-in-out;
 }
 
@@ -524,6 +520,10 @@ button {
 .showScrollTop {
     font-size: 14px;
     opacity: 1;
+}
+
+.scrollButton {
+    text-align: center;
 }
 
 a[data-lightbox] {
@@ -673,7 +673,11 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
+}
+
+.contact p {
+    padding-left: 75px;
 }
 
 .tight-width-whitespace {
@@ -706,7 +710,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -733,7 +737,7 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
-    padding-bottom: 25px;
+    padding-top: 10px;
 }
 
 .portfolio-thumb {
@@ -771,8 +775,10 @@ h4 {
     color: #FFC56D!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
     color: white!important;
+    border: solid black 2px;
+    border-radius: 0;
 }
 
 .ltc-white {
@@ -781,6 +787,10 @@ h4 {
 
 .ltc-white:hover {
     color: #cccccc!important;
+}
+
+.ltc-white:focus {
+    border: solid black 2px;
 }
 
 .ltc-atomic-tangerine {
@@ -805,7 +815,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
+    background-image: url("../img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -944,10 +954,7 @@ h4 {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
-    }
+    
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
@@ -996,6 +1003,7 @@ h4 {
     form {
         padding: 5px;
     }
+
     .close-lightbox {
         display: inline-block;
     }
